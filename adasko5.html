@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+     <div id="div1">ads</div>
+     <div id="div2">abc</div>
+      <div id="div3">acf</div>
+    </main>
+    <button id="d1"></button>
+    <button id="d2"></button>
+    <button id="d3"></button>     
+   <script>
+    let div1 = document.querySelector("#div1")
+    let div2 = document.querySelector("#div2")
+    let div3 = document.querySelector("#div3")
+    document.querySelector("#d1").addEventListener("click",function(){
+        div1.style = "display: block"
+         div2.style = "display: none"
+          div3.style = "display: none"
+    })
+    document.querySelector("#d2").addEventListener("click",function(){
+        div1.style = "display: none"
+         div2.style = "display: block"
+          div3.style = "display: none"
+    })
+    document.querySelector("#d3").addEventListener("click",function(){
+        div1.style = "display:none"
+         div2.style = "display: none"
+          div3.style = "display: block"
+    })
+   </script>
+
+
+</body>
+</html>
