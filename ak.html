@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="a" type="number">
+    <input id="b" type="number">
+    <button onclick="fun1()"> dotknij mnie</button>
+    <p id="wynik"></p>
+    <script>
+        function fun1(){
+            let a = parseInt(document.querySelector("#a").value)
+            let b = parseInt(document.querySelector("#b").value)
+
+            alert(a+b)
+            console.log(a+b)
+            //document.write(a+b)
+            const p = document.querySelector("#wynik")
+            p.innerHTML = a+b
+
+        }
+        function pitagoras(){
+            let a = parseInt(document.querySelector("#a").value)
+            let b = parseInt(document.querySelector("#b").value)
+            let c = document.querySelector("#p")
+            let pit = Math.pow(a,2) + Math.pow(b,2)
+            let wynik = Math.sqrt(pit)
+            c.innerHTML = wynik
+           let tekst = "ana.maria@gmail.com"
+           p.innerHTML = Text.match(/@gmail.com$/)
+           p.innerHTML += "@gmail.com".match(/@gmail.com/)
+           /[A-Z]/ //aaaaaaaaaaaaa
+           /[0-9]/
+           /[a-z]/
+           
+        }
+
+    </script> 
+</body>
+</html>
